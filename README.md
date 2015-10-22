@@ -1,7 +1,7 @@
 Description
 ---
 
-This repository contains a custom MATLAB function (`pairdist`) to compute the euclidean or cityblock distance between points in two matrices (`A` and `B`). The user may optionally supply a weights parameter (`WTS`) to differentially weigh the columns of `A` and `B` in the calculation of distance. `WTS` must be a row vector that sums to 1 (and will otherwise be normalized). `A`. `B`, and `WTS` must have the same number of columns.
+This repository contains a custom MATLAB function (`pairdist`) to compute the euclidean or cityblock distance between points in two matrices (`A` and `B`). The user may optionally supply a weights parameter (`WTS`) to differentially weigh the columns of `A` and `B` in the calculation of distance. `WTS` must be a row vector and it ought to sum to 1 (though this not a hard constraint). `A`, `B`, and `WTS` must have the same number of columns.
 
 This function was designed for use in computational models of category learning (such as the *GCM* and *ALCOVE*), and so the aim is to quickly and accurately compute weighted pairwise city-block and euclidean distance.
 
